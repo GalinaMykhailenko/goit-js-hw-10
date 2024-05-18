@@ -23,3 +23,26 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+[data-start] {
+  background-color: #4E75FF;
+  border-radius: 8px;
+  width: 75px;
+    height: 40px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+}
+
+
+[data-start]:disabled {
+background-color: #989898;
+}
+
+[data-start]:hover {
+  background-color: #6C8CFF;
+}
+
