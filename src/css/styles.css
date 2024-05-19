@@ -24,6 +24,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+h1 {
+  margin-left: 156px;
+}
+
+
+/* Timer */
+
 [data-start] {
   background-color: #4E75FF;
   border-radius: 8px;
@@ -46,3 +53,164 @@ background-color: #989898;
   background-color: #6C8CFF;
 }
 
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #2E2F42;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.64px;
+  padding-left: 16px;
+  margin-top: 36px;
+  margin-left: 156px;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #4E75FF;
+
+}
+
+#datetime-picker:disabled {
+  border: 1px solid #808080;
+  background-color: #FAFAFA;
+  color: #808080;
+}
+
+.timer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 27px;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-top: 32px;
+  margin-left: 156px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  color: #333;
+  font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 1.6px;
+}
+
+
+
+.label {
+  color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+}
+
+
+
+/* Snackbar */
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 156px;
+  width: 360px;
+}
+
+
+.form label {
+display: flex;
+flex-direction: column;
+margin-bottom: 16px;
+}
+
+
+.form label:first-child {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+
+.form label:last-child {
+}
+
+.form label {
+display: flex;
+  flex-direction: row;
+}
+
+.form input[type='number'] {
+display: flex;
+border-radius: 4px;
+  border: 1px solid #808080;
+  width: 340px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  padding-left: 16px;
+  margin-top: 8px;
+}
+
+.form input[type='number']:hover {
+  border: 1px solid #000;
+}
+
+.form input[type='number']:active {
+  border-color: #4e75ff;
+}
+
+
+.form input[type='radio'] {
+  
+}
+
+.form fieldset {
+  display: flex;
+  justify-content: space-around;
+width: 332px;
+  height: 64px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+    stroke: #808080;
+    border-radius: 8px;
+      margin-left: 0px;
+}
+
+.form legend {
+
+}
+
+
+.form button {
+background-color: #4E75FF;
+  border-radius: 8px;
+  width: 360px;
+  height: 40px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.64px;
+  margin-top: 24px;
+}
+
+.form button:hover {
+background-color: #6C8CFF;
+}
