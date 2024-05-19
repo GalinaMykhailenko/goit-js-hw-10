@@ -1,7 +1,6 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form');
   const delayInput = form.querySelector('input[name="delay"]');
@@ -20,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           message: `Fulfilled promise in ${delay} ms`,
           position: 'topCenter'
         });
+        resetForm();
       })
       .catch(delay => {
         iziToast.error({
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           message: `Rejected promise in ${delay} ms`,
           position: 'topCenter'
         });
+        resetForm();
       });
   });
 
@@ -41,6 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }, delay);
     });
   }
+
+  function resetForm() {
+    delayInput.value = '';
+    stateInputs.forEach(input => input.checked = false);
+  }
 });
-
-

@@ -31,6 +31,7 @@ const options = {
 
 flatpickr(datetimePicker, options);
 
+startBtn.disabled = true;
 
 function checkSelectedDate() {
   const now = new Date();
